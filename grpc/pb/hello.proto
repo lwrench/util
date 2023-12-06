@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option go_package = "util/grpc/pb";  // 指定生成的Go代码在你项目中的导入路径
+
+package pb; // 包名
+
+service Greeter {
+  rpc SayHello (HelloRequest) returns (HelloResponse);
+}
+
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloResponse {
+  string reply = 1;
+}
