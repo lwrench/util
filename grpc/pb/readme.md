@@ -2,7 +2,7 @@
 ```shell
 # Go语言插件，用于生成.pb.go，其中包含proto文件中定义的类型以及序列化方法
 go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.28
-# Grpc插件，用于盛昌_grpc.pb.go，其中包含接口类型（供客户端调用的服务方法）以及服务器要实现的接口类型
+# Grpc插件，用于生成_grpc.pb.go，其中包含接口类型（供客户端调用的服务方法）以及服务器要实现的接口类型
 go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.2
 ```
 注意需要将`$GOPATH/bin`加入环境变量中
