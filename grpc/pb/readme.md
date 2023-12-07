@@ -7,6 +7,10 @@ go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.2
 ```
 注意需要将`$GOPATH/bin`加入环境变量中
 
+```shell
+export PATH="$PATH:$(go env GOPATH)/bin"
+```
+
 ## 编写pb文件
 ```proto
 syntax = "proto3" // 版本声明
